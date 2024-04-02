@@ -10,10 +10,9 @@ export default function App() {
 
   return (
     <main className="App">
-      {/*nav tag goes here */}
+     <NavBar user={ user } setUser={ setUser }/>
       { user ?
         <>
-          <NavBar user={ user } setUser={ setUser }/>
           <Routes>
             {/* <Route path="/calendar" element={<CalendarHomePage />} />
             <Route path="/journal" element={<JournalPage />} />
